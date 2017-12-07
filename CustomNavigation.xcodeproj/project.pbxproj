@@ -16,6 +16,9 @@
 		6FCD01041FD7B53C006C1A49 /* CustomNavigationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FCD01031FD7B53C006C1A49 /* CustomNavigationTests.m */; };
 		6FCD010F1FD7B53C006C1A49 /* CustomNavigationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FCD010E1FD7B53C006C1A49 /* CustomNavigationUITests.m */; };
 		6FCD01211FD7B5C7006C1A49 /* UIViewController+NavigationStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FCD01201FD7B5C7006C1A49 /* UIViewController+NavigationStyle.m */; };
+		6FCD01261FD8DA1A006C1A49 /* NSObject+MethodSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FCD01251FD8DA1A006C1A49 /* NSObject+MethodSwizzling.m */; };
+		6FCD01291FD8DD40006C1A49 /* UIViewController+MethodSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FCD01281FD8DD40006C1A49 /* UIViewController+MethodSwizzling.m */; };
+		6FCD012C1FD8E150006C1A49 /* NSMutableArray+SateArr.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FCD012B1FD8E150006C1A49 /* NSMutableArray+SateArr.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,12 @@
 		6FCD01101FD7B53C006C1A49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6FCD011F1FD7B5C7006C1A49 /* UIViewController+NavigationStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NavigationStyle.h"; sourceTree = "<group>"; };
 		6FCD01201FD7B5C7006C1A49 /* UIViewController+NavigationStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NavigationStyle.m"; sourceTree = "<group>"; };
+		6FCD01241FD8DA1A006C1A49 /* NSObject+MethodSwizzling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+MethodSwizzling.h"; sourceTree = "<group>"; };
+		6FCD01251FD8DA1A006C1A49 /* NSObject+MethodSwizzling.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MethodSwizzling.m"; sourceTree = "<group>"; };
+		6FCD01271FD8DD40006C1A49 /* UIViewController+MethodSwizzling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MethodSwizzling.h"; sourceTree = "<group>"; };
+		6FCD01281FD8DD40006C1A49 /* UIViewController+MethodSwizzling.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MethodSwizzling.m"; sourceTree = "<group>"; };
+		6FCD012A1FD8E150006C1A49 /* NSMutableArray+SateArr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+SateArr.h"; sourceTree = "<group>"; };
+		6FCD012B1FD8E150006C1A49 /* NSMutableArray+SateArr.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+SateArr.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +113,7 @@
 		6FCD00E91FD7B53B006C1A49 /* CustomNavigation */ = {
 			isa = PBXGroup;
 			children = (
+				6FCD01231FD8D9E4006C1A49 /* Method */,
 				6FCD01221FD7B5D5006C1A49 /* Navigation */,
 				6FCD00EA1FD7B53C006C1A49 /* AppDelegate.h */,
 				6FCD00EB1FD7B53C006C1A49 /* AppDelegate.m */,
@@ -143,6 +153,19 @@
 				6FCD01201FD7B5C7006C1A49 /* UIViewController+NavigationStyle.m */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		6FCD01231FD8D9E4006C1A49 /* Method */ = {
+			isa = PBXGroup;
+			children = (
+				6FCD01241FD8DA1A006C1A49 /* NSObject+MethodSwizzling.h */,
+				6FCD01251FD8DA1A006C1A49 /* NSObject+MethodSwizzling.m */,
+				6FCD01271FD8DD40006C1A49 /* UIViewController+MethodSwizzling.h */,
+				6FCD01281FD8DD40006C1A49 /* UIViewController+MethodSwizzling.m */,
+				6FCD012A1FD8E150006C1A49 /* NSMutableArray+SateArr.h */,
+				6FCD012B1FD8E150006C1A49 /* NSMutableArray+SateArr.m */,
+			);
+			path = Method;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,10 +301,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FCD01261FD8DA1A006C1A49 /* NSObject+MethodSwizzling.m in Sources */,
 				6FCD00EF1FD7B53C006C1A49 /* ViewController.m in Sources */,
 				6FCD00FA1FD7B53C006C1A49 /* main.m in Sources */,
+				6FCD01291FD8DD40006C1A49 /* UIViewController+MethodSwizzling.m in Sources */,
 				6FCD01211FD7B5C7006C1A49 /* UIViewController+NavigationStyle.m in Sources */,
 				6FCD00EC1FD7B53C006C1A49 /* AppDelegate.m in Sources */,
+				6FCD012C1FD8E150006C1A49 /* NSMutableArray+SateArr.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

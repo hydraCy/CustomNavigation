@@ -19,7 +19,6 @@
 -(void)setNavigationStyle{
     //此处可统一配置,设置默认button样式
     self.leftButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    
     self.leftButton = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 82, 14)];
     [self.leftButton setTitle:@"leftBtn" forState:UIControlStateNormal];
     self.leftButton.titleLabel.font = [UIFont systemFontOfSize:14.0];
@@ -29,7 +28,6 @@
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.leftButton];
     
     self.rightButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    
     self.rightButton = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 82, 14)];
     [self.rightButton setTitle:@"rightButton" forState:UIControlStateNormal];
     self.rightButton.titleLabel.font = [UIFont systemFontOfSize:14.0];
@@ -60,7 +58,6 @@
             break;
         case kNavigationTypeFirst:
             NSLog(@"1");
-            
             break;
         default:
             break;
